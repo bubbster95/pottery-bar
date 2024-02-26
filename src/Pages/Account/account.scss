@@ -1,0 +1,48 @@
+@use '../../App.scss' as *;
+
+.logins {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.form {
+    position: relative;
+    display: grid;
+    margin: 10px 5%;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: $full-border-radius;
+    padding: 10px;
+}
+
+.form > label {
+    font-size: x-large;
+}
+.form > input, .form > textarea {
+    height: 40px;
+    margin: 10px 5%;
+    width: 90%;
+    font-size: x-large;
+}
+
+.form > button {
+    position: relative;
+    display: inline-block;
+    margin: 10px 5%;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 50px;
+    width: 90%;
+    color: white;
+    background-color: $light-blue;
+    border: none;
+    text-decoration: none;
+}
+
+.form > button:hover {
+    background-color: $dragonfire-orange;
+    border: none;
+}

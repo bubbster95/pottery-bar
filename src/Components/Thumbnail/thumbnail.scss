@@ -1,0 +1,53 @@
+@use '../../App.scss' as *;
+
+.thumbnail {
+    position: relative;
+    width: 18vw;
+    height: 18vw;
+    margin: 0 .5vw 1vw .5vw;
+    display: inline-block;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thumbnail-title{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: 700;
+    font-style: Bold;
+    text-transform: uppercase;
+    background-color: $light-blue;
+    color: white;
+    transition: .5s;
+}
+
+.thum-visible {
+    visibility: unset;
+    transition: .5s;
+    height: unset;
+}
+
+.thumb-hidden {
+    visibility: hidden;
+    transition: .5s;
+    height: 0px;
+}
+
+/* ***** Phones ***** */
+/* All Screens below 700px wide in portrait and landscape. */
+@media only screen
+    and (max-device-width: 700px) { 
+        .thumbnail {
+            width: 25vw;
+            height: 25vw;
+        }
+}

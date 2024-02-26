@@ -1,0 +1,62 @@
+@use '../../App.scss' as *;
+
+.editor-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* 
+FORMS
+----------------
+*/
+.backend-form {
+    position: relative;
+    display: grid;
+    margin: 10px 5%;
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: $full-border-radius;
+    padding: 10px;
+}
+
+.backend-form > label, .close-form {
+    font-size: x-large;
+}
+.backend-form > input, .backend-form > textarea {
+    height: 40px;
+    margin: 10px 5%;
+    width: 90%;
+    font-size: x-large;
+}
+
+.close-form {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.backend-form-buttons {
+    position: relative;
+}
+
+.backend-form-buttons > button, .close-form{
+    font-size: x-large;
+    font-weight: 700;
+    color: white;
+    background-color: $light-blue;
+    text-transform: uppercase;
+    border: none;
+    border-radius: $full-border-radius;
+}
+
+.backend-form-buttons > button{
+    display: inline-block;
+    width: 30%;
+    margin: 1% 5%;
+    height: 50px;
+}
+
+.backend-form-buttons > button:hover, .close-form:hover {
+    background-color: $dragonfire-orange;
+}
+

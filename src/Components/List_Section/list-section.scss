@@ -1,0 +1,45 @@
+@use '../../App.scss' as *;
+
+.text-section {
+    margin: 10px 0px;
+}
+
+.text-section p {
+    margin: 10px 0;
+}
+
+.text-wrapper {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.text-wrapper-left {
+    text-align: justify;
+    margin-left: 1%;
+}
+
+.text-wrapper-right {
+    text-align: justify;
+    margin-right: 1%;
+}
+
+.text-wrapper-center {
+    width: 100%;
+}
+
+.image-left, .image-right {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    justify-items: start;
+}
+
+.text-section .gallery {
+    width: 55%;
+}
+
+.text-section .gallery .thumbnail-container .thumbnail {
+    width: 30%;
+
+}

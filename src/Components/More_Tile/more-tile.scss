@@ -1,0 +1,47 @@
+@use '../../App.scss' as *;
+
+.more-tile-container {
+    display: flex;
+}
+
+.more-tile-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 30vw;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: $full-border-radius;
+    margin:1vw;
+}
+
+.more-tile-wrapper:hover {
+    transition: .5s;
+    color: $dragonfire-orange; 
+    cursor: pointer;
+}
+
+.more-tile-text {
+    position: relative;
+    z-index: 1;
+}
+
+.more-tile-overlay {
+    width: 30vw;
+    height: 30vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    opacity: .50;
+    z-index: 0;
+    border-radius: $full-border-radius;
+}
+
+.more-tile-image {
+    position: absolute;
+
+}

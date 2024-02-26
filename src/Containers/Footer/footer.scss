@@ -1,0 +1,43 @@
+@use '../../App.scss' as *;
+
+.footer-container {
+    position: relative;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    background-color: $cannary-blue;
+    // background-image: URL(/assets/bean_tile.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 50px;
+    color: $dark-orange;
+}
+
+.footer-wrapper {
+    padding: 20px;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    font-size: large;
+    display: block;
+    color:$dark-orange
+}
+
+.footer-link:hover {
+    color: $dragonfire-orange;
+}
+
+@media only screen
+    and (max-device-width: 700px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer-wrapper {
+            padding: 0;
+        }
+    }

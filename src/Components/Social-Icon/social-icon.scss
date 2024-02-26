@@ -1,0 +1,17 @@
+@use '../../App.scss' as *;
+
+.icon {
+    position: relative;
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+    margin: 0px 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:hover {
+    top: -2px;
+}

@@ -1,0 +1,105 @@
+@use '../../App.scss' as *;
+
+/* Editor */
+.inactive-editor-header {
+    background-color: $dragonfire-orange;
+    color: white;
+    border-radius: $full-border-radius;
+    display: block;
+    padding: 10px;
+}
+
+.inactive-editor-header:hover {
+    background-color: $dark-orange;
+    transition: .5s;
+}
+
+.active-editor-header {
+    position: relative;
+    border-radius: $top-border-radius;
+    margin-bottom: 0px;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+    background-color: $light-blue;
+}
+.active-editor-header:hover {
+    background-color: $cannary-blue;
+    transition: .5s;
+}
+
+.active-editor-container {
+    position: relative;
+    visibility: visible;
+    border: solid black 2px;
+    border-radius: $bottom-border-radius;
+    top: -2px;
+    margin-top: 0px;
+    animation: openContainer 1s 1;
+}
+
+@keyframes openContainer {
+    0% {
+        opacity: .0;
+    }
+    100% {
+        opacity: .90;
+    }
+}
+
+.inactive-editor-container {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Tiles */
+.tile-wrapper {
+    border: solid 2px black;
+    border-radius: $full-border-radius;
+    padding: 10px;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.tile-wrapper {
+    text-align: left;
+    margin: 10px;
+
+}
+
+/* Tile Buttons */
+.add-tile, .edit-tile, .delete-tile {
+    background-color: $light-blue;
+    color: white;
+    border-radius: $full-border-radius;
+    border: none;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 5px;
+    padding: 5px;
+}
+
+.add-tile:hover {
+    background-color: $dragonfire-orange;
+}
+
+.edit-tile {
+    background-color: #85db89;
+}
+
+.edit-tile:hover {
+    background-color: #457748;
+}
+
+.delete-tile {
+    background-color: #db8585;
+}
+
+.delete-tile:hover {
+    background-color: #7c4a4a;
+}

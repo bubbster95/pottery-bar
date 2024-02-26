@@ -1,0 +1,68 @@
+@use '../../App.scss' as *;
+
+.nav-button-wrapper {
+    display: inline-grid;
+    height: 100%;
+    align-content: center;
+}
+
+.link {
+    position: relative;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    color: $dark-orange;
+    text-decoration: none;
+}
+
+
+.link:hover, .link:active {
+    // top: -2px;
+    text-shadow: $cannary-blue 0px 1px 0px;
+    color: $dragonfire-orange;
+    border: none;
+}
+
+.option {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    font-weight: 700;
+    line-height: 40px; 
+    font-size: 1.5em;
+    color: white;
+}
+
+.option:hover, .option:active {
+    color:$dragonfire-orange;
+}
+
+/* ***** Phones ***** */
+/* All Screens below 700px wide in portrait and landscape. */
+@media only screen
+    and (max-device-width: 700px) { 
+        .nav-button-wrapper, .home-link {
+            width: 100%;
+        }
+        .link {
+            height: 60px;
+
+        }
+        .nav-button-wrapper {
+            align-items: center;
+            line-height: 60px;
+            height: unset;
+        }
+        .nav-button-wrapper {
+            display: grid;
+            justify-items: left;
+        }
+
+        .home-link {
+            margin-left: 0px;
+        }
+
+}

@@ -1,0 +1,35 @@
+@use '../../App.scss' as *;
+
+.wrapper-class {
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  .editor-class {
+    background-color:lightgray;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  .toolbar-class {
+    border: 1px solid #ccc;
+  }
+
+.text-editor-preview-container {
+    display: grid;
+}
+
+.text-preview {
+    border: solid black 2px;
+    border-radius: $full-border-radius;
+}
+
+.toolbar-class {
+  position: sticky;
+  top: 50px;
+  background-color: $light-blue;
+  opacity: .95;
+  z-index: 20;
+}
+
+.rdw-option-wrapper {
+  border-radius: $full-border-radius;
+}

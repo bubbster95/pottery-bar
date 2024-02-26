@@ -1,0 +1,12 @@
+@use '../../App.scss' as *;
+
+.text-block {
+    width: 44vw;
+    max-width: 800px;
+    margin: .5vw;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: $full-border-radius;
+    padding: .5vw;
+}
+

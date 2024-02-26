@@ -1,0 +1,107 @@
+@use './App.scss' as *;
+// @import url('https://fonts.googleapis.com/css2?family=Sofia:wght@400;500;800');
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Aboreto;
+  background-image: linear-gradient(to top, #ffff2500, rgb(250 220 31 / 30%));
+}
+
+.content {
+  position: relative;
+  margin-top: 50px;
+}
+
+h1, h3, .home-link {
+  font-weight: 700;
+  font-style: Bold;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+.capitalizeFirst:first-letter {
+  text-transform: uppercase;
+}
+
+.titleCaps {
+  text-transform: capitalize;
+}
+
+
+.image {
+  height: 50vh;
+}
+
+.content {
+  min-height: 75vh;
+}
+
+.page-content {
+  margin: 20px;
+  text-align: center;
+}
+
+.page-content li {
+  text-align: left;
+}
+
+.page-content > p {
+  margin: 20px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.visible {
+  display: block !important;
+}
+
+.button {
+  position: relative;
+  z-index: 2;
+  background-color: $light-blue;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  font-weight: 700;
+  font-style: Bold;
+  text-transform: uppercase;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  transition: .5s;
+  background-color: $cannary-blue;
+}
+
+.warning {
+  background-color: #d95e5e;
+}
+
+a.button{
+  display: inline-block;
+}

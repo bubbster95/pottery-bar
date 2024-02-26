@@ -1,0 +1,30 @@
+
+$dragonfire-orange: #724d3b;
+$dark-orange: #3b1604; //texas orange
+$light-blue: #74be95; 
+$cannary-blue: #74be95; //songbird-blue
+
+@mixin learn-more {
+    position: relative;
+    background-color: $light-blue;
+    color: white;
+    border-radius: $full-border-radius;
+    border: none;
+    padding: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@mixin learn-more-hover {
+    background-color: $cannary-blue;
+}
+
+
+$futura-pt: futura-pt, sans-serif;
+
+$full-border-radius: 10px;
+$top-border-radius: $full-border-radius $full-border-radius 0px 0px;
+$bottom-border-radius: 0px 0px $full-border-radius $full-border-radius;

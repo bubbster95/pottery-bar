@@ -1,0 +1,76 @@
+@use '../../App.scss' as *;
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: $cannary-blue;
+}
+
+.hero-wrapper {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.cta-button {
+    position: relative;
+    background-color: $dragonfire-orange;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 300px;
+    border-radius: $full-border-radius;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    color: Black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.cta-button:hover {
+    color: white;
+    background-color: $light-blue;
+}
+
+.RSC_Text_Logo {
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.hero-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    opacity: .55;
+    box-shadow: inset 0px 0px 100px 40px #37684e
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgb(19, 55, 7);
+    display: block;
+    width: 100vw;
+    opacity: .50;
+    z-index: 1;
+}

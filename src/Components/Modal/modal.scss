@@ -1,0 +1,51 @@
+@use '../../App.scss' as *;
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+}
+.modal-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #05597380;
+}
+
+.close-modal {
+    position: fixed;
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: bold;
+    top: 101px;
+    right: 5px;
+    border: 2px solid white;
+    border-radius: $full-border-radius;
+    color: white;
+    background-color: transparent;
+}
+
+.close-modal:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+.modal-overlay:hover {
+    cursor:pointer;
+}
+
+
+/* ***** Phones ***** */
+/* All Screens below 700px wide in portrait and landscape. */
+@media only screen
+    and (max-device-width: 700px) {      
+    .modal {
+        top: 50px;
+    } 
+    .close-modal{
+        top: 51px;
+    }
+}

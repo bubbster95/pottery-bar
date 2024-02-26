@@ -1,0 +1,23 @@
+@use '../../App.scss' as *;
+
+.section-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.section-image-container {
+    height: 50vh;
+}
+
+.section-text-container {
+    /* background-color: red; */
+    max-width: 600px;
+    margin: 10px auto ;
+}
+
+.category-section {
+    position: relative;
+    border: solid black 2px;
+    margin: 20px 0px;
+}
